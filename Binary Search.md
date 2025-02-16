@@ -1,6 +1,6 @@
 ---
 
-# **Binary Search Explained Simply**
+# **Binary Search Explained**
 
 ---
 
