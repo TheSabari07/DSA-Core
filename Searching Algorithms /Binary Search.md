@@ -156,3 +156,21 @@ If the target isn't found, `low` will point to the correct insertion index.
 ✔ **If the element is missing, it returns the correct insert position.**
 
 ---
+# **Binary Search Classification**
+
+Binary Search falls under **Algorithms** and specifically belongs to the category of **Searching Algorithms** in **Data Structures and Algorithms (DSA)**.  
+
+---
+
+## **Classification of Binary Search**
+
+| **Aspect**               | **Details**                            |
+|--------------------------|---------------------------------------|
+| **Algorithm Type**       | Searching Algorithm                   |
+| **Category**            | Divide and Conquer                    |
+| **Time Complexity**      | O(log N)                              |
+| **Data Structure Dependency** | Works on sorted arrays or lists |
+
+> **Note:** Binary Search is not a Data Structure itself but operates on Data Structures like **arrays, lists, or binary search trees (BSTs)** to efficiently find elements.
+
+---
