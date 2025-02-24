@@ -1,5 +1,7 @@
 # Bubble Sort
 
+
+Check Problem : https://www.geeksforgeeks.org/problems/bubble-sort/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=bubble-sort
 ## 1. What is Sorting?
 Sorting is the process of **arranging elements** in a particular order (ascending or descending).  
 It helps in searching, organizing, and analyzing data efficiently.
@@ -44,4 +46,50 @@ class Solution {
 };
 
 ```
+---
 
+### Step-by-Step Execution:
+
+| Pass | Array State   | Swaps Performed           |
+|------|-------------|---------------------------|
+| 1    | 1 4 3 7 9  | (4↔1), (4↔3), (9↔7)      |
+| 2    | 1 3 4 7 9  | (4↔3)                     |
+| 3    | 1 3 4 7 9  | No swaps (sorted)         |
+
+> Since no swaps occurred in the third pass, the sorting is complete.
+
+---
+
+## 5. Advantages and Disadvantages
+
+### Advantages:
+- Simple to implement
+- Works well for small datasets
+- Can detect if an array is already sorted (with an optimization)
+
+###  Disadvantages:
+- Inefficient for large datasets
+- Performs poorly compared to Quick Sort and Merge Sort
+
+---
+
+## 6. Optimized Bubble Sort (Stops Early if Sorted)
+
+```cpp
+void optimizedBubbleSort(vector<int>& arr) {
+    int n = arr.size();
+    bool swapped;
+
+    for (int i = 0; i < n - 1; i++) {
+        swapped = false;
+        for (int j = 0; j < n - i - 1; j++) {
+            if (arr[j] > arr[j + 1]) {
+                swap(arr[j], arr[j + 1]);
+                swapped = true;
+            }
+        }
+        if (!swapped) break; // Stop if no swaps occurred
+    }
+}
+```
+---
